@@ -18,16 +18,34 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes running-light {
+  0% {
+    border-color: transparent transparent transparent white;
+  }
+  25% {
+    border-color: transparent transparent white transparent;
+  }
+  50% {
+    border-color: transparent white transparent transparent;
+  }
+  75% {
+    border-color: white transparent transparent transparent;
+  }
+  100% {
+    border-color: transparent transparent transparent white;
   }
 }
