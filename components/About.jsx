@@ -10,7 +10,12 @@ function About() {
 
   const [showModal, setShowModal] = useState(false);
   const handleDownload = () => {
-    // Handle the download action here
+    const link = document.createElement('a');
+    link.href = "/Vishakh CS.pdf";
+    link.download = 'Vishakh_CS_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleContactClick = () => {
@@ -74,7 +79,7 @@ function About() {
               <p className="text-lg md:text-xl lg:text-2xl">Software Developer</p>
               <div className="mt-4 flex justify-center items-center cursor-pointer">
                 <button
-                  onClick={"handleDownload"}
+                  onClick={handleDownload}
                   className="flex items-center text-white border border-white rounded py-2 px-4 mr-4 hover:bg-white hover:text-blue-600 hover:shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300 z-20"
                 >
                   Download CV
