@@ -12,10 +12,10 @@ const Projects = () => {
 
     return (
         <div>
-            <div className="flex justify-center">
+            <div className="flex justify-center bg-black">
                 <hr className="border-blue-500 w-3/4 border-2" />
             </div>
-            <div className="py-16">
+            <div className="py-16 bg-black">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-extrabold text-white mb-8">
                         My Projects

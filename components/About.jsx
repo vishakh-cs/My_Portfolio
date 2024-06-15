@@ -31,7 +31,7 @@ function About() {
   };
 
   return (
-    <div className="h-screen bg-cover bg-center relative">
+    <div className="h-screen bg-black relative text-white">
       <div className="flex justify-center items-center h-screen z-10 relative">
         <div className="w-full sm:w-2/3 flex flex-col sm:flex-row">
           <div className="w-full sm:w-1/2 flex justify-center items-center sm:order-2">
